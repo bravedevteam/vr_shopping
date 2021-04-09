@@ -14,7 +14,6 @@
 	<section id="wrap" class="sub">
 		<header id="header">
 			<div class="left">
-				<a href="#" class="btnPrev">이전</a>
 				<h1 class="logo">HANCOM</h1>
 			</div>
 			<div class="right">
@@ -28,72 +27,55 @@
 				<a href="#" class="btnClose">닫기</a>
 			</div>
 		</header>
-		<div id="container">
-      <div class="boxComplete">주문이 완료되었습니다.</div>
-			<div class="section">
-				<h3 class="title">주문 정보</h3>
-				<div class="contArea">
-					<table class="tableBasic type--vertical">
-						<colgroup>
-              <col width="150" />
-              <col width="450" />
-              <col width="150" />
-              <col width="450" />
-            </colgroup>
-            <tr>
-              <th>주문일</th>
-              <td>2021.03.16</td>
-              <th>주문자</th>
-              <td>홍길동</td>
-            </tr>
-            <tr>
-              <th>주문번호</th>
-              <td>151654987132</td>
-              <th>배송 방법</th>
-              <td>택배</td>
-            </tr>
-            <tr>
-              <th>결제 금액</th>
-              <td>150,000,000원</td>
-              <th>결제 방법</th>
-              <td>한컴페이</td>
-            </tr>
-					</table>
-				</div>
-			</div>
-			<div class="section">
-				<h3 class="title">구매 정보</h3>
-				<div class="contArea">
-					<table class="tableBasic type--buy">
-						<colgroup>
-							<col width="" />
-							<col width="220" />
-              <col width="240" />
-						</colgroup>
-						<thead>
-							<tr>
-								<th>주문상품</th>
-                <th>수량</th>
-                <th>주문금액</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>펜던트 링 14k gold(8631321******)</td>
-								<td>2</td>
-                <td>150,000,000</td>
-							</tr>
-              <tr class="total">
-                <td>주문금액 : 150,000,000원 + 배송비 : 2,500원</td>
-                <td>총 주문 금액 (부가세 포함)</td>
-                <td class="sale"><span>150,000,000</span> 원</td>
-              </tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-      <div class="boxBtn">
-        <button type="button" class="btnBasic submit">확인</button>
+		<div id="container" class="type--detail">
+      <div class="boxItemDetail">
+        <div class="thumb"><img src="./images/imgDetail.jpg" alt="" /></div>
+        <div class="info">
+          <div class="inner">
+            <div class="titBrand">BRAND HOME</div>
+            <div class="titName">MECOMA RING</div>
+            <div class="titSubject">14k gold, 18k gold</div>
+            <dl class="listInfo">
+              <dt>스톤</dt>
+              <dd>정품 큐빅지르코니아 7EA</dd>
+              <dt>정보</dt>
+              <dd>
+                펜던트 - 14k : 약 1.57ㅎ / 18k : 약 1.9g<br />
+                체인 - 14k : 1.1g / 18k : 약 1.32g <span class="f-small">(제작 특성상 10% 오차 발생)</span>
+              </dd>
+            </dl>
+            <dl class="listInfo">
+              <dt>옵션</dt>
+              <dd class="ta-r">
+                <div class="select">
+                  <select>
+                    <option>펜던트 14k gold (1.57g)</option>
+                    <option>펜던트 14k gold (1.57g)</option>
+                    <option>펜던트 14k gold (1.57g)</option>
+                  </select>
+                </div>
+              </dd>
+              <dt>수량</dt>
+              <dd class="ta-r">
+                <div class="num">
+                  <a href="#">-</a>
+                  <input type="text" value="1" />
+                  <a href="#">+</a>
+                </div>
+              </dd>
+              <dt>금액</dt>
+              <dd class="ta-r">
+                <span class="sale">2,230,000</span>
+                <span class="won">1,150,000 <span>원</span></span>
+              </dd>
+            </dl>
+            <div class="btn">
+              <button type="button">BUY NOW</button>
+              <button type="button" class="btnCart">담기</button>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btnDetail">DETAIL</a>
       </div>
 		</div>
 		<a href="#" id="btnLNB">메뉴</a>

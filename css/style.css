@@ -3,6 +3,14 @@
 
 @font-face {
 	font-family: 'SpoqaHanSansNeo';
+	font-weight: 100;
+	src: local('SpoqaHanSansNeo-Thin'),
+	url('../font/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+	url('../font/SpoqaHanSansNeo-Thin.woff') format('woff'),
+	url('../font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'SpoqaHanSansNeo';
 	font-weight: 400;
 	src: local('SpoqaHanSansNeo-Regular'),
 	url('../font/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
@@ -65,7 +73,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .ta-c { text-align:center !important; }
 .ta-r { text-align:right !important; }
 
-input[type=text].sale { color:#ff3200; }
 input[type=text].sale:disabled { background:#fff; }
 input.size--s { width:120px; }
 input.size--m { width:192px; }
@@ -79,26 +86,27 @@ input[type="checkbox"]+label.hidden { font-size:0; text-indent:-99999px; }
 
 input[type="radio"]+label { padding-left:25px; position:relative; cursor:pointer; }
 input[type="radio"]+label:before { content:''; width:16px; height:16px; position:absolute; left:0; top:50%; margin-top:-8px; border-radius:50%; background:#fff; border:1px solid #7d7d7d; z-index:1; }
-input[type="radio"]:checked+label:after { content:''; width:12px; height:12px; position:absolute; left:3px; top:50%; margin-top:-5px; background:#ff3200; border-radius:50%; z-index:2; }
+input[type="radio"]:checked+label:after { content:''; width:12px; height:12px; position:absolute; left:3px; top:50%; margin-top:-5px; background:#b98e41; border-radius:50%; z-index:2; }
 label+input[type="radio"]+label { margin-left:40px; }
 
 span.imp { color:#ff3200; }
+span.f-small { font-size:12px; }
 
-#wrap { width:100%; height:100%; position:relative; overflow:hidden; }
+#wrap { width:100%; height:100%; min-height:100%; position:relative; overflow:hidden; }
 #wrap.sub { height:auto; overflow:auto; }
 
-h1.logo { width:114px; height:22px; position:absolute; left:60px; top:40px; background:url('../images/logo.png') no-repeat; font-size:0; text-indent:-99999px; z-index:2; }
+h1.logo { width:114px; height:22px; position:absolute; left:60px; top:40px; background:url('../images/logo.png') no-repeat; font-size:0; text-indent:-99999px; z-index:5; }
 
-#btnLNB { width:4px; height:100%; position:absolute; left:0; top:0; background:#ff3200; z-index:10; font-size:0; text-indent:-99999px; transition:all .3s; }
+#btnLNB { width:4px; height:100%; position:absolute; left:0; top:0; background:#b98e41; z-index:10; font-size:0; text-indent:-99999px; transition:all .3s; }
 #btnLNB.on { left:100%; }
 
-.boxTopRight { position:absolute; right:50px; top:45px; z-index:2; font-family:"CopperplateGothic-Bold", "Sans-serif"; font-weight:700; }
+.boxTopRight { position:absolute; right:50px; top:45px; z-index:5; font-family:"CopperplateGothic-Bold", "Sans-serif"; font-weight:700; }
 .boxTopRight:after { content:''; display:block; clear:both; }
 .boxTopRight .btnCart { position:relative; float:left; }
 .boxTopRight .btnCart > a { padding:0 23px; position:relative; z-index:1; color:#fff; font-size:14px; }
-.boxTopRight .btnCart .bedge { width:20px; height:20px; position:absolute; right:0; top:-6px; border-radius:20px; background:#ff3200; font-size:10px; font-family:"Poppins", "Sans-serif"; font-weight:500; color:#fff; text-align:center; line-height:20px; }
+.boxTopRight .btnCart .bedge { width:20px; height:20px; position:absolute; right:0; top:-6px; border-radius:20px; background:#1b1b1b; font-size:10px; font-family:"Poppins", "Sans-serif"; font-weight:500; color:#fff; text-align:center; line-height:20px; }
 .boxTopRight .btnMap { position:relative; float:left; margin-left:38px; }
-.boxTopRight .btnMap > a { position:relative; padding-right:18px; font-size:14px; color:#ff3200; }
+.boxTopRight .btnMap > a { position:relative; padding-right:18px; font-size:14px; color:#fff; }
 .boxTopRight .btnMap > a:after { content:''; width:8px; height:8px; position:absolute; top:3px; right:0; background:url('../images/iconMap.png') no-repeat; }
 .boxTopRight .btnMap.active > a:after { background-image:url('../images/iconMap_on.png'); }
 .boxTopRight .btnMap .areaMap { height:0; position:absolute; left:0; top:24px; transition:height 0.3s;  }
@@ -112,8 +120,20 @@ h1.logo { width:114px; height:22px; position:absolute; left:60px; top:40px; back
 .boxBottomRight a.btnSound { background-image:url('../images/iconSound.png'); }
 .boxBottomRight a.btnSound.on { background-image:url('../images/iconSound_on.png'); }
 
-#btnAllProduct { width:196px; height:52px; position:absolute; left:50%; bottom:80px; margin-left:-98px; border-radius:52px; background:#ff3200; text-align:center; font-size:12px; color:#fff; line-height:52px; z-index:5; font-family:"CopperplateGothic-Bold", "Sans-serif"; font-weight:700; }
-#btnAllProduct:before { content:''; width:16px; height:16px; display:inline-block; margin-right:10px; background:url('../images/btnAllproduct.png') no-repeat; vertical-align:middle; }
+.boxProduct { padding:0 64px; position:absolute; left:50%; bottom:45px; transform:translateX(-50%); z-index:20; }
+.boxProduct .swiper-container { width:1072px; }
+.boxProduct .swiper-slide { width:162px; height:154px; background:rgba(255,255,255,.8); border-radius:20px; }
+.boxProduct .swiper-slide a { width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; }
+.boxProduct .swiper-slide .thumb { width:80px; height:80px; margin-bottom:5px; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius:50%; }
+.boxProduct .swiper-slide .name { text-align:center; font-size:14px; color:#b98e41; line-height:18px; }
+.boxProduct .swiper-button-next,
+.boxProduct .swiper-button-prev { width:40px; height:20px; margin-top:-10px; background:url('../images/btnSlideWhite.png') right center no-repeat; }
+.boxProduct .swiper-button-prev { transform:rotate(180deg); }
+.boxProduct .swiper-button-next:after,
+.boxProduct .swiper-button-prev:after { display:none; }
+
+.boxProduct .swiper-button-next.swiper-button-disabled,
+.boxProduct .swiper-button-prev.swiper-button-disabled { display:none; }
 
 #vrArea { min-width:100%; height:100%; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:1; }
 #vrArea img { min-width:100%; max-width:none; height:100%; position:relative; z-index:1; }
@@ -121,11 +141,12 @@ h1.logo { width:114px; height:22px; position:absolute; left:60px; top:40px; back
 .boxSpot { position:absolute; z-index:2; }
 .boxSpot.pos1 { left:26.3%; top:60.5%; }
 .boxSpot.pos2 { left:63.3%; top:54.6%; }
-.boxSpot.pos3 { left:79.1%; top:63.7%; }
-.boxSpot.pos4 { left:80.625%; top:47.2%; }
+.boxSpot.pos3 { left:81.46%; top:63.33%; }
+.boxSpot.pos4 { left:73.6%; top:58.33%; }
+.boxSpot.pos5 { left:36.35%; top:53.5%; }
 .boxSpot a { display:block; }
-.boxSpot .current { width:10px; height:10px; border-radius:10px; background:#ff3200; }
-.boxSpot .spot { position:absolute; left:50%; top:50%; border:1px solid #ff3200; border-radius:50%; animation:wave 4s infinite; transform:translate(-50%, -50%); opacity:0; }
+.boxSpot .current { width:10px; height:10px; border-radius:10px; background:#fff; }
+.boxSpot .spot { position:absolute; left:50%; top:50%; border:1px solid #fff; border-radius:50%; animation:wave 4s infinite linear; transform:translate(-50%, -50%); opacity:0; }
 .boxSpot .spot.pos2 { animation-delay:1s; }
 .boxSpot .spot.pos3 { animation-delay:2s; }
 .boxSpot .spot.pos4 { animation-delay:3s; }
@@ -144,24 +165,15 @@ h1.logo { width:114px; height:22px; position:absolute; left:60px; top:40px; back
 
 .boxMainBrand { width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
 .boxMainBrand .inner { width:100%; }
-.boxMainBrand h3.title { margin-bottom:38px; margin-left:-43%; text-align:center; font-size:100px; color:#ff3200; }
-.boxMainBrand .box { width:385px; height:336px; background:#fff; border-radius:10px; overflow:hidden; }
-.boxMainBrand .box .thumb { width:100%; height:237px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
-.boxMainBrand .box .cont { overflow:hidden; }
-.boxMainBrand .box .cont .product { width:124px; height:99px; padding:32px 18px 0; float:left; border-right:1px solid #b8b8b8; }
-.boxMainBrand .box .cont .brand { height:99px; padding:32px 18px 0; margin-left:125px; }
-.boxMainBrand .box .cont .number { margin-bottom:5px; font-size:22px; }
-.boxMainBrand .box .cont .title { margin-bottom:5px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:22px; }
-.boxMainBrand .box .cont .subject { font-size:13px; color:#ff3200; }
+.boxMainBrand h3.title { margin-bottom:38px; margin-left:-43%; text-align:center; font-size:100px; color:#b98e41; }
+.boxMainBrand .box { width:285px; height:256px; background:#fff; border-radius:10px; overflow:hidden; }
+.boxMainBrand .box .thumb { width:100%; height:256px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
 
-.boxMainBrand .swiper-container { margin-left:-43%; padding-bottom:110px; }
-.boxMainBrand .swiper-slide { width:385px; }
-.boxMainBrand .swiper-slide.swiper-slide-active .box { background:#ff3200; }
-.boxMainBrand .swiper-slide.swiper-slide-active .product { border-color:#000; }
-.boxMainBrand .swiper-slide.swiper-slide-active .subject { color:#fff; }
+.boxMainBrand .swiper-container { margin-left:-43.5%; padding-bottom:110px; overflow:visible; }
+.boxMainBrand .swiper-slide { width:285px; }
 .boxMainBrand .swiper-button-next, .boxMainBrand .swiper-button-prev { width:80px; height:22px; top:424px; margin-top:0; transition:all .3s; }
-.boxMainBrand .swiper-button-prev, .boxMainBrand .swiper-container-rtl .swiper-button-next { left:50%; margin-left:-192px; }
-.boxMainBrand .swiper-button-next, .boxMainBrand .swiper-container-rtl .swiper-button-prev { right:50%; margin-right:-18px; }
+.boxMainBrand .swiper-button-prev, .boxMainBrand .swiper-container-rtl .swiper-button-next { left:50%; margin-left:-140px; }
+.boxMainBrand .swiper-button-next, .boxMainBrand .swiper-container-rtl .swiper-button-prev { right:50%; margin-right:-58px; }
 .boxMainBrand .swiper-button-prev:before, .boxMainBrand .swiper-container-rtl .swiper-button-next:before,
 .boxMainBrand .swiper-button-next:before, .boxMainBrand .swiper-container-rtl .swiper-button-prev:before { content:''; width:100%; height:1px; position:absolute; left:0; top:50%; background:#fff; }
 .boxMainBrand .swiper-button-next:after, .boxMainBrand .swiper-container-rtl .swiper-button-prev:after { content:''; width:14px; height:22px; position:absolute; top:50%; right:0; margin-top:-11px; background:url('../images/btnSlide.png') no-repeat; }
@@ -169,49 +181,69 @@ h1.logo { width:114px; height:22px; position:absolute; left:60px; top:40px; back
 .boxMainBrand .swiper-button-next.swiper-button-disabled,
 .boxMainBrand .swiper-button-prev.swiper-button-disabled { width:54px; opacity:.3; }
 
-
-#boxLNB .bgRect { height:100%; position:absolute; top:50%; border:1px solid #ff3200; border-radius:50%; opacity:.3; transform:translate(-50%, -50%); }
-#boxLNB .bgRect.pos1 { width:40.73%; left:88.125%; }
-#boxLNB .bgRect.pos2 { width:22.3%; left:0; }
-#boxLNB .bgLine { width:1px; height:100%; position:absolute; top:0; left:31.77%; opacity:.3; background:#ff3200; }
-
 #header { overflow:hidden; }
-#header .left { float:left; }
-#header .left .btnPrev { width:32px; height:42px; float:left; margin:35px 44px 0 48px; background:url('../images/btnArrowBack.png') center center no-repeat; font-size:0; text-indent:-99999px; }
+#header .left { float:left; padding-left:48px; }
+#header .left .btnPrev { width:32px; height:42px; float:left; margin:35px 44px 0 0; background:url('../images/btnArrowBack.png') center center no-repeat; font-size:0; text-indent:-99999px; }
 #header .left h1.logo { width:114px; height:20px; float:left; position:relative; left:0; top:0; margin-top:40px; background:url('../images/logo_color.png') no-repeat; font-size:0; text-indent:-99999px; }
 #header .right { float:right; }
 #header .right ul { float:left; padding-top:36px; margin-right:120px; }
 #header .right ul li { float:left; position:relative; font-family:"CopperplateGothic-Bold"; font-weight:700; font-size:14px; }
 #header .right ul li a { display:block; padding:10px 10px; }
-#header .right ul li .bedge { width:20px; height:20px; position:absolute; right:-12px; top:4px; border-radius:20px; background:#ff3200; text-align:center; line-height:20px; color:#fff; font-size:10px; }
+#header .right ul li .bedge { width:20px; height:20px; position:absolute; right:-12px; top:4px; border-radius:20px; background:#b98e41; text-align:center; line-height:20px; color:#fff; font-size:10px; }
 #header .right ul li+li { margin-left:6px; }
 #header .right .btnClose { width:120px; height:120px; float:left; background:url('../images/btnClose.png') center center no-repeat #1b1b1b; font-size:0; text-indent:-99999px; }
 
+#header.type--white .left h1.logo { background-image:url('../images/logo.png'); }
+#header.type--white .right ul li a { color:#fff; }
+#header.type--white .right ul li .bedge { background:#1b1b1b; }
+
 #container { width:1200px; margin:0 auto; padding-top:50px; }
+#container.type--detail { width:auto; padding:0; }
+
 
 h3.title { margin-bottom:15px; padding:0 20px; font-size:17px; }
 
 .section+.section { margin-top:70px; }
 
 .topArea { overflow:hidden; }
+.topArea > .title { margin-bottom:50px; font-size:27px; font-weight:700; text-align:center; }
 .topArea .left { float:left; }
 .topArea .left .title { float:left; padding-right:5px; }
-.topArea .left .length { float:left; font-size:17px; color:#ff3200; font-weight:700; }
+.topArea .left .length { float:left; font-size:17px; color:#b98e41; font-weight:700; }
 .topArea .right { float:right; line-height:30px; }
 .topArea .right .item { padding:0 30px; float:left; position:relative; }
 .topArea .right .item+.item:after { content:''; width:1px; height:14px; position:absolute; left:0; top:50%; margin-top:-7px; background:#7d7d7d; }
+
+.boxSearch { margin-bottom:45px; padding:14px 30px; background:#f9f9f9; }
+.boxSearch:after { content:''; display:block; clear:both; }
+.boxSearch .left { float:left; }
+.boxSearch .right { float:right; }
+.boxSearch .title { height:42px; float:left; margin-right:30px; line-height:42px; }
+.boxSearch .check { float:left; }
+.boxSearch .check input[type="checkbox"]+label { width:100px; height:42px; float:left; padding:0; border:1px solid #c9c9c9; border-left-width:0; background:#fff; line-height:40px; text-align:center; }
+.boxSearch .check input[type="checkbox"]+label:first-of-type { border-left-width:1px; }
+.boxSearch .check input[type="checkbox"]+label:after { display:none; }
+.boxSearch .check input[type="checkbox"]:checked+label:after { width:100%; height:100%; top:0; margin:0; display:block; background:transparent; border:1px solid #707070; z-index:10; }
+.boxSearch .calendar { float:left; }
+.boxSearch .inputCalendar { float:left; position:relative; background:#fff; }
+.boxSearch .inputCalendar:after { content:''; width:18px; height:16px; position:absolute; right:13px; top:15px; background:url('../images/iconCalendar.png') no-repeat; z-index:1; }
+.boxSearch .inputCalendar input { width:156px; height:42px; position:relative; padding:0 14px; background:transparent; font-size:15px; z-index:2; }
+.boxSearch .hypen { height:42px; float:left; padding:0 12px; line-height:42px; }
+.boxSearch .calendar button { width:78px; height:42px; margin-left:3px; float:left; background:#1b1b1b; color:#fff; font-size:15px; }
 
 .tableBasic { width:100%; border-top:1px solid #c9c9c9; }
 .tableBasic tr th { height:50px; padding:18px 20px; background:#f9f9f9; text-align:left; font-weight:400; }
 .tableBasic tr td { height:68px; padding:12px 20px; border-bottom:1px solid #e5e5e5; }
 .tableBasic tr td:first-of-type { padding:28px 20px; vertical-align:top; }
 .tableBasic tr td .row+.row { margin-top:10px; }
-.tableBasic tr td.sale { color:#ff3200; }
+.tableBasic tr td.sale { color:#b98e41; }
 .tableBasic tr td.sale span { font-size:21px; }
 .tableBasic tr td .thumb { width:150px; height:150px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
 .tableBasic tr td .title { font-size:17px; font-weight:700; text-align:left; }
 .tableBasic tr td .title+ul { margin-top:20px; }
 .tableBasic tr td ul li { line-height:25px; color:#595959; text-align:left; font-size:15px; }
+.tableBasic tr td .date { margin-bottom:6px; font-size:15px; color:#7a7a7a; }
+.tableBasic tr td .btnTrans { width:84px; height:34px; display:block; margin:8px auto; background:#e8e8e8; border-radius:34px; font-size:15px; }
 .tableBasic tr.total td { background:#f9f9f9; font-weight:700; }
 .tableBasic.type--main th { text-align:center; }
 .tableBasic.type--main td { padding:35px 20px; font-size:17px; }
@@ -223,11 +255,15 @@ h3.title { margin-bottom:15px; padding:0 20px; font-size:17px; }
 .tableBasic.type--buy tr td { text-align:center; }
 .tableBasic.type--buy tr th:first-of-type,
 .tableBasic.type--buy tr td:first-of-type { text-align:left; }
+.tableBasic.type--order { text-align:center; font-size:17px; }
+.tableBasic.type--order tr th { text-align:center; }
+.tableBasic.type--order tr td { padding:35px 20px; vertical-align:middle; }
+.tableBasic.type--order tr td .thumb { width:180px; height:180px; }
 
 .addressSelect { overflow:hidden; }
 .addressSelect a { width:84px; height:36px; border-radius:18px; float:left; line-height:36px; color:#0d0d0d; text-align:center; }
 .addressSelect a+a { margin-left:8px; }
-.addressSelect a.on { background:#ff3200; color:#fff; }
+.addressSelect a.on { background:#b98e41; color:#fff; }
 
 .posLen { display:inline-block; position:relative; }
 .posLen input { padding-right:60px; }
@@ -245,11 +281,11 @@ span.hyphen { display:inline-block; margin:0 10px; }
 .resultArea .right { width:382px; float:right; }
 .resultArea .right dl dt { float:left; margin-bottom:25px; }
 .resultArea .right dl dd { margin-left:100px; margin-bottom:25px; text-align:right; }
-.resultArea .right dl dd.sale { color:#ff3200; }
+.resultArea .right dl dd.sale { color:#b98e41; }
 .resultArea .right .result { padding-top:26px; border-top:1px solid #1b1b1b; line-height:36px; }
 .resultArea .right .result .title { float:left; }
 .resultArea .right .result .won { margin-left:100px; text-align:right; }
-.resultArea .right .result .won span { display:inline-block; margin-right:15px; font-size:32px; font-weight:700; color:#ff3200; vertical-align:top; }
+.resultArea .right .result .won span { display:inline-block; margin-right:15px; font-size:32px; font-weight:700; color:#b98e41; vertical-align:top; }
 
 .boxComplete { margin-bottom:50px; padding-top:85px; background:url('../images/iconComplete.png') center top no-repeat; font-size:27px; font-weight:700; text-align:center; }
 
@@ -260,4 +296,104 @@ span.hyphen { display:inline-block; margin:0 10px; }
 
 .btnBasic { min-width:100px; height:45px; padding:0 15px; background:#f9f9f9; border:1px solid #c9c9c9; font-size:15px; color:#1b1b1b; }
 .btnBasic.dis { color:#c9c9c9; }
-.btnBasic.submit { width:280px; height:70px; border-radius:35px; background:#ff3200; border:0; color:#fff; font-size:22px; font-weight:700; }
+.btnBasic.submit { width:280px; height:70px; border-radius:35px; background:#b98e41; border:0; color:#fff; font-size:22px; font-weight:700; }
+
+
+.boxBrand { height:100%; position:relative; display:flex; align-items:center; justify-content:center; flex-direction:column; z-index:2; }
+.boxBrand .boxItems .item { width:218px; height:218px; display:inline-block; margin:0 15px; position:relative;  border-radius:50%; background:url('../images/btnBrand.png') no-repeat; vertical-align:middle; }
+.boxBrand .boxItems .item a { width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
+.boxBrand .boxItems .item img { width:110px; height:130px; }
+.boxBrand .txt { margin-top:95px; font-size:25px; font-weight:100; line-height:40px; color:#fff; text-align:center; }
+
+
+.boxIntro { width:100%; height:100%; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; background:rgba(0,0,0,0.86); z-index:2; font-family:"CopperplateGothic-Bold"; }
+.boxIntro .subject { color:#b98e41; font-size:50px; letter-spacing:0.2em; }
+.water-fill { animation: water 0.7s infinite linear, fill-up 10s ease-out alternate; }
+
+@keyframes water {
+  0% { x: -400px; }
+  100% { x: 0; }
+}
+
+
+@keyframes fill-up {
+  0% {
+    height: 0;
+    y: 230px;
+  }
+  100% {
+    height: 330px;
+    y: -100px;
+  }
+}
+
+.select { position:relative; border:1px solid #c9c9c9; }
+.select:after { content:''; width:30px; height:36px; position:absolute; right:0; top:0; background:url('../images/iconSelect.png') center center no-repeat; border-left:1px solid #c9c9c9; }
+.select select { width:100%; height:36px; padding:0 12px; position:relative; background:transparent; border:0; z-index:2; }
+
+.boxItemDetail { position:relative; border-bottom:1px solid #c9c9c9; }
+.boxItemDetail:after { content:''; display:block; clear:both; }
+.boxItemDetail .thumb { width:50%; float:left; }
+.boxItemDetail .thumb img { width:100%; }
+.boxItemDetail .info { width:50%; float:right; }
+.boxItemDetail .info .inner { width:430px; padding:18px 0 30px; margin-left:160px; }
+.boxItemDetail .info .titBrand { height:26px; display:inline-block; margin-bottom:30px; padding:0 12px; border-radius:26px; border:1px solid #e7e7e7; line-height:26px; vertical-align:middle; font-family:"CopperplateGothic-Bold"; font-weight:700; font-size:15px; }
+.boxItemDetail .info .titName { margin-bottom:10px; font-family:"CopperplateGothic-Bold"; font-size:36px; font-weight:700; }
+.boxItemDetail .info .titSubject { margin-bottom:40px; font-family:"CopperplateGothic-Bold"; font-size:17px; font-weight:700; }
+.boxItemDetail .info .listInfo { padding:30px 0; }
+.boxItemDetail .info .listInfo:after { content:''; display:block; clear:both; }
+.boxItemDetail .info .listInfo+.listInfo { border-top:1px solid #e7e7e7; }
+.boxItemDetail .info .listInfo dt { width:80px; float:left; margin-top:20px; color:#c9c9c9; line-height:32px; font-size:13px; }
+.boxItemDetail .info .listInfo dd { margin-left:90px; margin-top:20px; line-height:32px; font-size:15px; }
+.boxItemDetail .info .listInfo dt:first-of-type,
+.boxItemDetail .info .listInfo dd:first-of-type { margin-top:0; }
+
+.boxItemDetail .info .listInfo dd .select { width:282px; display:inline-block; vertical-align:middle; }
+
+.boxItemDetail .info .listInfo dd .num { display:inline-block; overflow:hidden; vertical-align:middle; }
+.boxItemDetail .info .listInfo dd .num a { width:36px; height:36px; float:left; border:1px solid #c9c9c9; line-height:34px; text-align:center; font-weight:100; font-size:15px; font-family:"Poppins", "Sans-serif"; color:#b2b2b2; }
+.boxItemDetail .info .listInfo dd .num input { width:52px; height:36px; float:left; border:1px solid #c9c9c9; border-left-width:0; border-right-width:0; text-align:center; }
+.boxItemDetail .info .listInfo dd .sale { display:inline-block; position:relative; color:#7d7d7d; font-size:17px; font-weight:700; vertical-align:middle; }
+.boxItemDetail .info .listInfo dd .sale:after { content:''; width:100%; height:1px; position:absolute; left:0; top:50%; background:#b98e41; }
+.boxItemDetail .info .listInfo dd .won { display:inline-block; margin-left:10px; font-size:32px; font-weight:700; color:#252525; vertical-align:middle; }
+.boxItemDetail .info .listInfo dd .won span { font-size:15px; font-weight:400; }
+
+.boxItemDetail .info .btn { margin-top:120px; }
+.boxItemDetail .info .btn:after { content:''; display:block; clear:both; }
+.boxItemDetail .info .btn button { width:330px; height:90px; float:left; border-radius:45px; background:#b98e41; box-shadow:0 10px 31px rgba(0,0,0,.17); text-align:center; font-size:25px; font-family:"CopperplateGothic-Bold"; font-weight:700; color:#fff; }
+.boxItemDetail .info .btn button.btnCart { width:90px; margin-left:10px; box-shadow:none; background:url('../images/iconCart.png') center center no-repeat #252525; font-size:0; text-indent:-99999px; }
+.boxItemDetail .btnDetail { padding-right:12px; position:absolute; left:50%; bottom:-65px; background:url('../images/iconDetailArrow.png') right center no-repeat; transform:translateX(-50%); font-size:17px; font-family:"CopperplateGothic-Bold"; font-weight:700; }
+
+
+.pageList { height:349px; margin-top:-120px; padding-top:350px; background:url('../images/bgListTop.jpg') center top no-repeat; }
+.pageList .inner { width:1200px; padding:90px 0; margin:0 auto; position:relative; }
+
+.itemListTop { position:relative; }
+.itemListTop .swiper-container { width:942px; margin:0 auto; }
+.itemListTop .swiper-slide { width:123px; text-align:center; font-size:15px; }
+.itemListTop .swiper-slide .thumb { width:123px; height:123px; display:flex; margin-bottom:15px; border-radius:50%; background:#72594b; overflow:hidden; align-items:center; justify-content:center; }
+.itemListTop .swiper-button-next,
+.itemListTop .swiper-button-prev { width:80px; height:20px; background:url('../images/btnSlideBlack.png') right center no-repeat; transition:width .3s; }
+.itemListTop .swiper-button-prev { transform:rotate(180deg); }
+.itemListTop .swiper-button-next:after,
+.itemListTop .swiper-button-prev:after { display:none; }
+
+.itemListTop .swiper-button-next.swiper-button-disabled,
+.itemListTop .swiper-button-prev.swiper-button-disabled { width:54px; }
+
+.itemListSort { height:48px; margin-top:70px; margin-bottom:40px; border:1px solid #ccc; }
+.itemListSort:after { content:''; display:block; clear:both; }
+.itemListSort .result { float:left; padding:0 28px; line-height:46px; font-size:12px; }
+.itemListSort .result span { color:#ff3200; }
+.itemListSort .select { width:156px; float:right; border-width:0 0 0 1px; }
+.itemListSort .select:after { height:48px; border-left:0; }
+.itemListSort .select select { height:48px; }
+
+.itemList ul:after { content;''; display:block; clear:both; }
+.itemList ul li { width:274px; height:436px; margin-bottom:20px; float:left; margin-left:34px; }
+.itemList ul li:nth-child(4n+1) { margin-left:0; }
+.itemList ul li .thumb { width:274px; height:274px; margin-bottom:20px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.itemList ul li .title { font-size:22px; font-family:"CopperplateGothic-Bold"; font-weight:700; }
+.itemList ul li .subject { margin-bottom:10px; font-size:12px; font-family:"CopperplateGothic-Bold"; font-weight:700; }
+.itemList ul li .sale { font-size:15px; color:#7d7d7d; }
+.itemList ul li .won { font-size:18px; font-weight:700; color:#b98e41 }

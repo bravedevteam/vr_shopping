@@ -24,6 +24,15 @@ $(function(){
 		$("#btnLNB").removeClass("on");
 	});
 
+	var mainProduct = new Swiper('.boxProduct .swiper-container', {
+		slidesPerView: 'auto',
+		spaceBetween: 20,
+		navigation: {
+			nextEl: '.boxProduct .swiper-button-next',
+			prevEl: '.boxProduct .swiper-button-prev',
+		},
+	});
+
 	var mainBrand = new Swiper('.boxMainBrand .swiper-container', {
 		slidesPerView: 'auto',
 		spaceBetween: 40,
@@ -31,6 +40,15 @@ $(function(){
 		navigation: {
 			nextEl: '.boxMainBrand .swiper-button-next',
 			prevEl: '.boxMainBrand .swiper-button-prev',
+		},
+	});
+
+	var listItem = new Swiper('.itemListTop .swiper-container', {
+		slidesPerView: "auto",
+		spaceBetween: 40,
+		navigation: {
+			nextEl: '.itemListTop .swiper-button-next',
+			prevEl: '.itemListTop .swiper-button-prev',
 		},
 	});
 });
