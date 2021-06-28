@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+	  name="viewport">
+<head>
+	<meta charset="UTF-8">
+	<title>arowana</title>
+	<link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/ui.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/swiper.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/responsive.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+
+	<header>
+		<div class="wrap">
+
+			<!-- 모바일 메뉴 -->
+			<div class="left-menu">
+				<a class="header-menu" href="javascript:mobileMenuOpen()"></a>
+			</div>
+			<div class="right-menu">
+				<a class="cart-btn" href="#none"><span class="alarm-cnt">2</span></a>
+				<a class="search-btn" href="javascript:keywordOpen()"></a>
+			</div>
+
+			<h1 class="logo">
+				<a href="#none"></a>
+			</h1>
+
+			<div class="keyword-box">
+				<div class="keyword-wrap">
+					<div class="input-box">
+						<input type="text" placeholder="검색어를 입력하세요.">
+						<a href="#none" class="keyword-btn"></a>
+					</div>
+					<a href="javascript:keywordClose()" class="keyword-close-btn"></a>
+
+				</div>
+
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="#none"><span class="txt">BRAND</span></a></li>
+					<li><a href="#none"><span class="txt">MYPAGE</span></a></li>
+					<li><a href="#none"><span class="txt">CART</span></a></li>
+					<li><a href="#none"><span class="txt">LOGIN</span></a></li>
+					<li><a href="#none"><span class="txt">JOIN US</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="sub-menu">
+
+			<div class="sub-menu-wrap">
+				<div class="sub-menu-box" data-menu="brand">
+					<ul>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_submenu1_item1.png">
+								</div>
+								<div class="txt-box"><span class="txt">Mollis</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_submenu1_item2.png">
+								</div>
+								<div class="txt-box"><span class="txt">PANDORA</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_submenu1_item3.png">
+								</div>
+								<div class="txt-box"><span class="txt">SWAROVSKI</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_submenu1_item4.png">
+								</div>
+								<div class="txt-box"><span class="txt">LLOYD</span></div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<nav class="lnb">
+
+		<div class="lnb__header">
+
+			<div class="top-box">
+				<div class="intro-box">
+					<b>홍길동 님</b>&nbsp;반갑습니다.
+				</div>
+				<div class="intro-menu">
+					<a href="#none" class="menu-btn">LOGOUT</a>
+				</div>
+			</div>
+
+			<div class="bottom-box">
+
+				<div class="menu-list">
+					<a href="#none" class="menu-btn">
+						<div class="ic ic-my"></div>
+						<div class="txt">MY</div>
+					</a>
+
+					<a href="#none" class="menu-btn">
+						<div class="ic ic-delivery"></div>
+						<div class="txt">DELIVERY</div>
+					</a>
+
+					<a href="#none" class="menu-btn">
+						<div class="ic ic-cart"></div>
+						<div class="txt">CART</div>
+					</a>
+				</div>
+
+			</div>
+
+
+
+
+		</div>
+		<div class="lnb__body">
+
+			<div class="lnb-menu-box">
+				<div class="menu-tit">BRAND SHOP</div>
+				<div class="brand-list">
+					<a href="#none" class="brand-btn">
+						<div class="img-box">
+							<img src="../img/img_lobby_item1.png">
+						</div>
+					</a>
+					<a href="#none" class="brand-btn">
+						<div class="img-box">
+							<img src="../img/img_lobby_item1.png">
+						</div>
+					</a>
+					<a href="#none" class="brand-btn">
+						<div class="img-box">
+							<img src="../img/img_lobby_item1.png">
+						</div>
+					</a>
+					<a href="#none" class="brand-btn">
+						<div class="img-box">
+							<img src="../img/img_lobby_item1.png">
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="lnb-menu-box">
+				<a href="#none" class="menu-tit">CODEGATE</a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	<div class="wrapper">
+
+		<section class="vr" style="background:url('../img/img_vr_main.png')">
+			<!-- VR 영역 -->
+
+
+			<!-- 갤러리맵 -->
+			<article class="vr-map">
+				<div class="wrap">
+					<div class="head-box">
+						<div class="head-txt">GALLERY MAP</div>
+						<div class="more-box"><a class="more-btn" href="#none"></a></div>
+					</div>
+
+					<div class="body-box">
+						<div class="navi-box">
+							<img alt="이미지" src="../img/img_gallery_dummy.png">
+						</div>
+					</div>
+
+					<div class="foot-box">
+
+						<div class="control-box">
+							<a class="control-btn" href="#none"><i class="ic ic-prev"></i></a>
+							<a class="control-btn" href="#none"><i class="ic ic-next"></i></a>
+							<a class="control-btn" href="#none"><i class="ic ic-home"></i></a>
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</article>
+
+			<!-- 포인트 -->
+			<article class="vr-point" style="top:300px; left:150px;">
+				<a class="point-btn" href="#none"></a>
+
+				<div class="point-info-box">
+					<div class="point-info-wrap">
+
+						<div class="img-box">
+							<img alt="이미지" src="../img/img_main_item3.png">
+						</div>
+
+						<div class="info-box">
+							<div class="txt-box">
+								시엔나 그레이<br/>
+								서브다이아 볼드 14k&18k 반지
+
+							</div>
+							<div class="more-box">
+								<a class="more-btn" href="#none">
+									<span class="txt">자세히 보기</span>
+									<i class="ic ic-more"></i>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</article>
+			<article class="vr-point on" style="top:300px; left:200px;">
+				<a class="point-btn" href="#none"></a>
+
+				<div class="point-info-box">
+					<div class="point-info-wrap">
+
+						<div class="img-box">
+							<img alt="이미지" src="../img/img_main_item3.png">
+						</div>
+
+						<div class="info-box">
+							<div class="txt-box">
+								시엔나 그레이<br/>
+								서브다이아 볼드 14k&18k 반지
+
+							</div>
+							<div class="more-box">
+								<a class="more-btn" href="#none">
+									<span class="txt">자세히 보기</span>
+									<i class="ic ic-more"></i>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</article>
+		</section>
+
+		<section class="main-contents">
+			<div class="wrap">
+
+				<article class="lobby-item-subject">PRODUCT LIST</article>
+
+				<div class="list-box">
+					<ul>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item1.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									다아시 크로스<br/>
+									그레이러프
+
+									<div class="more-box">
+										<span class="more-btn">
+											<span class="txt">자세히 보기</span>
+											<span class="ic ic-more"></span>
+										</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item2.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									시엔나 그레이<br/>
+									서브다이아 볼드
+									<div class="more-box">
+										<span class="more-btn">
+											<span class="txt">자세히 보기</span>
+											<span class="ic ic-more"></span>
+										</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item3.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									시엔나 그레이<br/>
+									서브다이아 볼드
+									<div class="more-box">
+										<span class="more-btn">
+											<span class="txt">자세히 보기</span>
+											<span class="ic ic-more"></span>
+										</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item1.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									다아시 크로스<br/>
+									그레이러프
+
+									<div class="more-box">
+										<span class="more-btn">
+											<span class="txt">자세히 보기</span>
+											<span class="ic ic-more"></span>
+										</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item2.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									시엔나 그레이<br/>
+									서브다이아 볼드
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item3.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									시엔나 그레이<br/>
+									서브다이아 볼드
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item1.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									다아시 크로스<br/>
+									그레이러프
+
+									<div class="more-box">
+										<span class="more-btn">
+											<span class="txt">자세히 보기</span>
+											<span class="ic ic-more"></span>
+										</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item2.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									시엔나 그레이<br/>
+									서브다이아 볼드
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img alt="이미지" src="../img/img_main_item3.png" class="web">
+									<img alt="이미지" src="../img/img_main_item_m.png" class="mobile">
+								</div>
+								<div class="txt-box">
+									시엔나 그레이<br/>
+									서브다이아 볼드
+								</div>
+							</a>
+						</li>
+						<li class="all-product">
+							<a class="all" href="#none">
+								<div class="ic-box">
+									<i class="ic ic-all"></i>
+								</div>
+								<div class="all-txt">
+									ALL<br/>
+									PRODUCT
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+
+
+			</div>
+		</section>
+
+	</div>
+
+
+
+	<article class="loading" style="display: none;">
+
+		<div class="loading-box">
+
+			<img alt="이미지" src="../img/img_loading.png">
+
+		</div>
+
+	</article>
+
+
+</div>
+
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery-ui-1.12.1.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+<script>
+
+	$('article.vr-point .point-btn').on('click', function () {
+
+		if ($(this).parent().hasClass('on')) {
+			$('article.vr-point').removeClass('on')
+		} else {
+			$('article.vr-point').removeClass('on')
+			$(this).parent().toggleClass('on');
+		}
+	});
+
+	setTimeout(function() {
+		$('article.loading').fadeOut();
+	}, 2000);
+
+
+	$('.main-contents ul li a').on('click',function (){
+
+		$('.main-contents ul li').removeClass('active')
+		$(this).parent().toggleClass('active');
+	})
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

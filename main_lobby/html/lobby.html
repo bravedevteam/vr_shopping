@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+	  name="viewport">
+<head>
+	<meta charset="UTF-8">
+	<title>arowana</title>
+	<link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/ui.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/swiper.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/responsive.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container overlay">
+
+	<header>
+		<div class="wrap">
+
+			<!-- 모바일 메뉴 -->
+			<div class="left-menu">
+				<a class="header-menu" href="javascript:mobileMenuOpen()"></a>
+			</div>
+			<div class="right-menu">
+				<a href="#none" class="cart-btn"><span class="alarm-cnt">2</span></a>
+				<a class="search-btn" href="javascript:keywordOpen()"></a>
+			</div>
+
+			<h1 class="logo">
+				<a href="#none"></a>
+			</h1>
+			<div class="keyword-box">
+				<div class="keyword-wrap">
+					<div class="input-box">
+						<input type="text" placeholder="검색어를 입력하세요.">
+						<a href="#none" class="keyword-btn"></a>
+					</div>
+					<a href="javascript:keywordClose()" class="keyword-close-btn"></a>
+
+				</div>
+
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="#none"><span class="txt">BRAND</span></a></li>
+					<li><a href="#none"><span class="txt">MYPAGE</span></a></li>
+					<li><a href="#none"><span class="txt">CART</span><span class="alarm-cnt">2</span></a></li>
+					<li><a href="#none" class="user"><span class="txt">홍길동 님<span class="intro-txt">&nbsp;반갑습니다.</span></span></a></li>
+					<li><a href="#none"><span class="txt">LOGOUT</span></a></li>
+				</ul>
+			</nav>
+
+
+
+		</div>
+		<div class="sub-menu">
+
+			<div class="sub-menu-wrap">
+				<div class="sub-menu-box" data-menu="brand">
+					<ul>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img src="../img/img_submenu1_item1.png" alt="이미지">
+								</div>
+								<div class="txt-box"><span class="txt">Mollis</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img src="../img/img_submenu1_item2.png" alt="이미지">
+								</div>
+								<div class="txt-box"><span class="txt">PANDORA</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img src="../img/img_submenu1_item3.png" alt="이미지">
+								</div>
+								<div class="txt-box"><span class="txt">SWAROVSKI</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#none">
+								<div class="img-box">
+									<img src="../img/img_submenu1_item4.png" alt="이미지">
+								</div>
+								<div class="txt-box"><span class="txt">LLOYD</span></div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<nav class="lnb">
+
+		<div class="lnb__header">
+
+			<div class="top-box">
+				<div class="intro-menu">
+					<a href="#none" class="menu-btn">JOIN</a>
+					<a href="#none" class="menu-btn">LOGIN</a>
+				</div>
+			</div>
+
+			<div class="bottom-box">
+
+				<div class="menu-list">
+					<a href="#none" class="menu-btn">
+						<div class="ic ic-my"></div>
+						<div class="txt">MY</div>
+					</a>
+
+					<a href="#none" class="menu-btn">
+						<div class="ic ic-delivery"></div>
+						<div class="txt">DELIVERY</div>
+					</a>
+
+					<a href="#none" class="menu-btn">
+						<div class="ic ic-cart"></div>
+						<div class="txt">CART</div>
+					</a>
+				</div>
+
+			</div>
+
+
+
+
+		</div>
+		<div class="lnb__body">
+
+			<div class="lnb-menu-box">
+				<div class="menu-tit">BRAND SHOP</div>
+				<div class="brand-list">
+					<a href="#none" class="brand-btn">
+						<div class="img-box">
+							<img src="../img/img_lobby_item1.png">
+						</div>
+					</a>
+					<a href="#none" class="brand-btn">
+						<div class="img-box">
+							<img src="../img/img_lobby_item1.png">
+						</div>
+					</a>
+					<a href="#none" class="brand-btn">
+						<div class="img-box">
+							<img src="../img/img_lobby_item1.png">
+						</div>
+					</a>
+					<a href="#none" class="brand-btn">
+						<div class="img-box">
+							<img src="../img/img_lobby_item1.png">
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="lnb-menu-box">
+				<a href="#none" class="menu-tit">CODEGATE</a>
+			</div>
+
+		</div>
+
+	</nav>
+
+
+	<div class="wrapper">
+
+		<section class="vr" style="background:url('../img/img_lobby.png')">
+			<!-- VR 영역 -->
+		</section>
+
+		<section class="lobby-contents">
+
+			<div class="wrap">
+				<article class="lobby-items">
+
+					<article class="lobby-item-subject">TODAY’S BRAND</article>
+
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#none">
+									<div class="label-box">today</div>
+									<div class="img-box">
+										<img src="../img/img_lobby_item1.png" alt="이미지" class="web">
+										<img src="../img/img_lobby_item1_m.png" alt="이미지" class="mobile">
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none">
+									<div class="label-box">today</div>
+									<div class="img-box">
+										<img src="../img/img_lobby_item2.png" alt="이미지" class="web">
+										<img src="../img/img_lobby_item2_m.png" alt="이미지" class="mobile">
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none">
+									<div class="label-box">today</div>
+									<div class="img-box">
+										<img src="../img/img_lobby_item3.png" alt="이미지" class="web">
+										<img src="../img/img_lobby_item1_m.png" alt="이미지" class="mobile">
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none">
+									<div class="label-box">today</div>
+									<div class="img-box">
+										<img src="../img/img_lobby_item2.png" alt="이미지" class="web">
+										<img src="../img/img_lobby_item2_m.png" alt="이미지" class="mobile">
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="swiper-pagination"></div>
+
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+
+
+				</article>
+				<article class="lobby-events">
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#none">
+									<div class="img-box">
+										<img src="../img/img_event1.png" alt="이미지" class="web">
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none">
+									<div class="img-box">
+										<img src="../img/img_event1.png" alt="이미지" class="web">
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#none">
+									<div class="img-box">
+										<img src="../img/img_event1.png" alt="이미지" class="web">
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+				</article>
+				<article class="lobby-banners">
+
+					<a href="#none" class="w-img-box">
+						<img src="../img/img_event2.png" alt="이미지">
+					</a>
+					<a href="#none" class="m-img-box">
+					</a>
+				</article>
+
+
+				<article class="lobby-mobile-events">
+
+					<article class="lobby-item-subject">EVENT</article>
+
+					<ul>
+						<li><a href="#none"><img src="../img/img_event1_m.png" alt="이벤트"></a></li>
+						<li><a href="#none"><img src="../img/img_event2_m.png" alt="이벤트"></a></li>
+					</ul>
+
+				</article>
+
+			</div>
+
+
+
+		</section>
+	</div>
+
+	<footer>
+		<div class="wrap">
+
+			<div class="terms-list">
+				<a href="#none" class="terms-btn">개인정보처리방침</a>
+				<a href="#none" class="terms-btn">전자금융거래</a>
+				<a href="#none" class="terms-btn">이용약관</a>
+			</div>
+
+			<div class="corp-info">
+				경기도 성남시 분당구 대왕판교로 644번길 49 한컴타워 10층<br/>
+				고객지원 (평일 9시-18시) : 국내고객 1566-5192<br/>
+				사업자등록번호 107-81-52230<br/>
+				통신판매신고번호 2012-경기성남-1092<br/>
+				(주)한글과컴퓨터 대표자 : 변성준
+			</div>
+		</div>
+	</footer>
+
+
+	<article class="popup popup-welcome" style="display: block">
+		<div class="popup-wrap">
+
+			<div class="popup-logo"></div>
+
+			<div class="popup-body">
+
+				<article class="pop-welcome-group">
+
+					<div class="info-img-box">
+						<img src="../img/img_vr_info.png" alt="이미지">
+					</div>
+
+					<div class="info-intro-box">
+						welcome!
+					</div>
+
+					<div class="info-txt-box">
+						아로와나 몰 체험존에 오신 여러분 환영합니다.<br/>
+						손가락이나 마우스를 활용해 체험존을 둘러볼 수 있습니다.
+					</div>
+
+
+				</article>
+			</div>
+
+			<div class="popup-foot">
+				<div class="cbox">
+					<label>
+						<input type="checkbox"><i></i>
+						<span class="txt">오늘 다시보지 않기</span>
+					</label>
+				</div>
+
+				<a href="javascript:popupClose('welcome')" class="close-btn">닫기</a>
+			</div>
+
+		</div>
+
+	</article>
+
+
+</div>
+
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery-ui-1.12.1.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+<script>
+	var itemsSwiper = new Swiper('.lobby-items .swiper-container', {
+
+		autoHeight: true,
+		slideToClickedSlide: true,
+		spaceBetween: 10,
+		loop:false,
+		slidesPerView: 'auto',
+
+
+		navigation: { // 네비게이션 설정
+			nextEl: '.lobby-items .swiper-button-next', // 다음 버튼 클래스명
+			prevEl: '.lobby-items .swiper-button-prev', // 이번 버튼 클래스명
+		},
+
+		pagination : {
+			el : '.lobby-items .swiper-pagination'
+		},
+
+		breakpoints: {
+			// when window width is >= 320px
+			1200: {
+				slidesPerView: 3,
+				spaceBetween: 5
+			},
+		}
+
+
+	});
+
+
+	var eventsSwiper = new Swiper('.lobby-events .swiper-container', {
+
+		loop: true,
+		parallax: true,
+		autoHeight: true,
+		slideToClickedSlide: true,
+		slidesPerView: 1,
+
+		pagination : {
+			el : '.lobby-events .swiper-pagination'
+		},
+
+
+	});
+
+</script>
+
+
+</body>
+</html>
